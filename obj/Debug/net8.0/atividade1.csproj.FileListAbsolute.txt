@@ -1,0 +1,15 @@
+C:\Users\veronica.macedo\Trybe\ATIVIDADE1\obj\Debug\net8.0\atividade1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\veronica.macedo\Trybe\ATIVIDADE1\obj\Debug\net8.0\atividade1.AssemblyInfoInputs.cache
+C:\Users\veronica.macedo\Trybe\ATIVIDADE1\obj\Debug\net8.0\atividade1.AssemblyInfo.cs
+C:\Users\veronica.macedo\Trybe\ATIVIDADE1\obj\Debug\net8.0\atividade1.csproj.CoreCompileInputs.cache
+C:\Users\veronica.macedo\Trybe\ATIVIDADE1\obj\Debug\net8.0\atividade1.sourcelink.json
+C:\Users\veronica.macedo\Trybe\ATIVIDADE1\bin\Debug\net8.0\atividade1.exe
+C:\Users\veronica.macedo\Trybe\ATIVIDADE1\bin\Debug\net8.0\atividade1.deps.json
+C:\Users\veronica.macedo\Trybe\ATIVIDADE1\bin\Debug\net8.0\atividade1.runtimeconfig.json
+C:\Users\veronica.macedo\Trybe\ATIVIDADE1\bin\Debug\net8.0\atividade1.dll
+C:\Users\veronica.macedo\Trybe\ATIVIDADE1\bin\Debug\net8.0\atividade1.pdb
+C:\Users\veronica.macedo\Trybe\ATIVIDADE1\obj\Debug\net8.0\atividade1.dll
+C:\Users\veronica.macedo\Trybe\ATIVIDADE1\obj\Debug\net8.0\refint\atividade1.dll
+C:\Users\veronica.macedo\Trybe\ATIVIDADE1\obj\Debug\net8.0\atividade1.pdb
+C:\Users\veronica.macedo\Trybe\ATIVIDADE1\obj\Debug\net8.0\atividade1.genruntimeconfig.cache
+C:\Users\veronica.macedo\Trybe\ATIVIDADE1\obj\Debug\net8.0\ref\atividade1.dll
