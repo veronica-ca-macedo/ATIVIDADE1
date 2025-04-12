@@ -20,6 +20,19 @@ static void menu()
     Console.WriteLine("Olá! Vamos validar se a palavra é um palíndromo");
     Console.WriteLine("Escreva a plavra desejada: ");
     string palavra = Console.ReadLine();
+
+    char[] array = palavra.ToCharArray(); // convertendo palavra em array de caracteres
+        Array.Reverse(array); //invertendo o array para formar nova palavra
+        string inverso = new string(array); //fazedno o array inverso virar uma string
+
+    if (inverso == palavra) // resposta para o usuario
+    {
+        Console.WriteLine($"Sua palavra {palavra} é um palíndromo!");
+    }
+    else
+    {
+        Console.WriteLine($"Sua palavra {palavra} não é um palíndromo! O inverso dela é {inverso}");
+    }
 }
 
 }
