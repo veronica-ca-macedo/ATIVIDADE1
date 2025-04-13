@@ -24,7 +24,7 @@ class Program
         }
     }
 
-    static void menu()
+    static void PreenchendoNomes()
     {
         do
         {
@@ -48,8 +48,10 @@ class Program
         AlunosNotas[AlunosNomes] = Notas;
         }
         } while (true);
+    }
 
-
+    static void CalculoMedia()
+    {
         double media = AlunosNotas.Values.Average(); // média valores lista
         media = Math.Round(media, 2);
         Console.WriteLine();
@@ -64,11 +66,14 @@ class Program
                 Console.WriteLine($"{aluno.Key}: {aluno.Value}"); // imprimindo  nomes e sua respectica nota
             }
         }
+    }
 
+    static void NovaTurma()
+    {
         do // problema: estava considerando para a mesma turma qdo digitava o mesmo
         {
         Console.WriteLine();
-        Console.WriteLine("Deseja calcular para uma NOVAA turma? Digite 1 para SIM e 0 para 'NÃO, quero continuar nessa turma' ou 2 para SAIR");
+        Console.WriteLine("Deseja calcular para uma NOVA turma? Digite 1 para SIM e 0 para 'NÃO, quero continuar nessa turma' ou 2 para SAIR");
         escolhaturma = int.Parse(Console.ReadLine());
         if (escolhaturma == 1)
         {
@@ -91,6 +96,12 @@ class Program
             Console.WriteLine("Valor inválido!");
         }
         } while (escolhaturma != 1 && escolhaturma != 0);
+    }
 
+    static void menu()
+    {
+        PreenchendoNomes();
+        CalculoMedia();
+        NovaTurma();
     }
 }
