@@ -13,6 +13,7 @@ class Program
     static string resposta;
     static string palpite;
     static bool resultado;
+    static int tentativa;
 
 
     static void Main()
@@ -25,7 +26,7 @@ class Program
 
     static void menu()
     {
-        resposta = "veronica";
+        resposta = "teste";
 
 
         resposta = resposta.ToUpper(); // ajustando erros de maiuscula e minuscula 
@@ -37,17 +38,21 @@ class Program
         respostaEscondida[i] = '_'; // para todas as letras converter a letra por _
         }
 
+        Console.WriteLine($"Vamos jogar jogo da forca!");
+
 
         //string respostaescondida = new string(array);  // tranformado resposta com tds letras são _
+        tentativa = 0;
 
 do
 {
-        Console.WriteLine($"Vamos jogar jogo da forca! Escreva uma letra seu palpite da palavra {respostaEscondida} abaixo: ");
+        tentativa = tentativa + 1;
+        Console.WriteLine($"Você está na tentativa {tentativa} de 10. Escreva uma letra seu palpite da palavra {new string(respostaEscondida)} abaixo: ");
         palpite = Console.ReadLine();
         palpite = palpite.ToUpper(); // protegendo de erro de maiusculo e minusculo
         char letraPalpite = palpite[0]; // apenas uma letra (a primeira)
 
-        resultado = false;
+        resultado = false; // declara aqui e se passar por um verdadeiro passa a ser sempre verdadeiro, e se for tudo falso fica tudo falso
         
         for (int i = 0; i < array.Length; i++) // ultimo array é length-1 (indezador comecao com 0)
         {
@@ -58,17 +63,32 @@ do
             }
         }
 
+        Console.WriteLine();
+
         if (resultado == true)
         {
-            Console.WriteLine($"Parabéns! A letra {letraPalpite} está correta, a palavra agora é {respostaEscondida}");
+            Console.WriteLine($"Parabéns! A letra {letraPalpite} está correta, a palavra agora é {new string(respostaEscondida)}");
         }
         else
         {
             Console.WriteLine($"A letra {letraPalpite} está incorreta, tente novamente");
         }
 
+        ;
 
-} while(true);
+
+
+} while (new string(respostaEscondida) != resposta && tentativa < 10);
+
+        Console.WriteLine();
+        if (new string(respostaEscondida) == resposta)
+        {
+        Console.WriteLine($"Parabéns! Você conseguiu! A resposta é {resposta}!");
+        }
+        else
+        {
+        Console.WriteLine("Você excedeu o limite de tentativas!");
+        }
         
 
     }
